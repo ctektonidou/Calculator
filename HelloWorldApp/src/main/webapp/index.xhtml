@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Java EE Mini Workshop- First Demo</title>
+    </h:head>
+    <h:body>
+        
+        <h:outputLabel value="ΕΠΙΛΥΣΗ ΠΡΟΒΛΗΜΑΤΩΝ"  /> 
+        <br />
+        <br />
+        <h:link value="Σελίδα Calculator" outcome="/calculator.xhtml"/>
+        <br />
+        <br />
+        <h:link value="Σελίδα Rectangle" outcome="/rectangle.xhtml"/>
+
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <h:form>
+            <h:commandButton value="Σελίδα Calculator" action="#{controllerBean.gotoCalculatorAction()}"/>
+            <br />
+            <br />
+            <h:commandButton value="Σελίδα Rectangle" action="#{controllerBean.gotoRectangleAction()}"/>
+        </h:form>
+        
+        
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        <h:form>
+            <h:commandButton value="Σελίδα Calculator" action="#{controllerBean.gotoPageAction('calculator')}"/>
+            <br />
+            <br />
+            <h:commandButton value="Σελίδα Rectangle" action="#{controllerBean.gotoPageAction('rectangle')}"/>
+        </h:form>        
+        
+    </h:body>
+</html>
+
